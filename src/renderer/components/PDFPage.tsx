@@ -27,7 +27,7 @@ const PDFPage = ({ pageNumber, scale }: Props) => {
   const onRenderPage = () => {
     if (refCanvasPage.current != null) {
       refCanvasPage.current.toBlob(
-        (blob) => console.log(blob),
+        (blob) => blob,
         imgFile.jpg,
         imgFile.bestQuality
       );

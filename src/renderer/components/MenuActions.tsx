@@ -12,6 +12,7 @@ const ButtonsContainer = styled.div`
 `;
 
 const FilesInput = styled.input`
+  width: 100%;
   opacity: 0;
   position: absolute;
   cursor: pointer;
@@ -33,8 +34,9 @@ const MenuActions = ({ handleVisibility, handleFile }: Props): JSX.Element => {
     }
   }, [dictoriesInputRef]);
 
-  const handleDirectory = (target) => {
-    console.log(target);
+  const handleDirectory = (target: HTMLElement) => {
+    // console.log(target);
+    return target;
   };
 
   return (

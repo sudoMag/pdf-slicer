@@ -25,7 +25,7 @@ const MainPage = ({ getPDF }: Props): JSX.Element => {
   const handleFile = (files: FileList | null) => {
     if (files !== null) {
       const file = Array.from(files)[0];
-      const fileName = file.name;
+      // const fileName = file.name;
       const PDFPath = file.path;
       const PDFUint8Array: Uint8Array = getPDF(PDFPath);
       setPDFFile(PDFUint8Array);
